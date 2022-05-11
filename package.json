@@ -1,0 +1,46 @@
+{
+  "name": "nestjs-web3",
+  "version": "1.1.0",
+  "author": {
+    "name": "Maxim Markin",
+    "email": "mxrkin@yandex.ru"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owl1n/nestjs-web3.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc && npm run build:index",
+    "build:index": "rimraf ./index.js ./index.d.ts && tsc -d --skipLibCheck ./index.ts",
+    "format": "prettier **/*.ts --ignore-path ./.prettierignore --write && git status",
+    "prepublish": "yarn run format && yarn run build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.2.6",
+    "@nestjs/core": "^8.2.6",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.2.0",
+    "web3": "^1.7.3",
+    "web3-core-helpers": "^1.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "*",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "rimraf": "*",
+    "typescript": "^4.6.4"
+  },
+  "keywords": [
+    "nestjs",
+    "eth",
+    "web3",
+    "nestjs-eth",
+    "nestjs-web3"
+  ]
+}
