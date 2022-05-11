@@ -11,6 +11,7 @@ lib
 
 # configuration
 .prettierrc
+.eslintrc.js
 nest-cli.json
 nodemon-debug.json
 package-lock.json
@@ -19,3 +20,5 @@ tsconfig.spec.json
 tslint.json
 webpack.config.js
 yarn.lock
+.idea
+
