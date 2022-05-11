@@ -5,10 +5,10 @@ This is first release of this module. Readme under construction but here are a c
 ## Installation
 
 #### Yarn
-`yarn add nestjs-web3`
+`yarn add nest-web3`
 
 #### NPM
-`yarn add nestjs-web3`
+`yarn add nest-web3`
 
 ## Getting started with module
 
@@ -16,7 +16,7 @@ Register Web3Module module in yours `app.module.ts` (or other main module of you
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { Web3Module } from 'nestjs-web3';
+import { Web3Module } from 'nest-web3';
 
 @Module({
     imports: [
@@ -34,7 +34,7 @@ Or with Async
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { Web3Module } from 'nestjs-web3';
+import { Web3Module } from 'nest-web3';
 
 @Module({
     imports: [
@@ -62,7 +62,7 @@ export interface Web3ModuleOptions {
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { Web3Service } from "nestjs-web3";
+import { Web3Service } from "nest-web3";
 
 @Injectable()
 export class SomeClass {

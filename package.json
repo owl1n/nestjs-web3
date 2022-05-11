@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-web3",
+  "name": "nest-web3",
   "version": "1.1.0",
   "author": {
     "name": "Maxim Markin",
@@ -41,6 +41,9 @@
     "eth",
     "web3",
     "nestjs-eth",
-    "nestjs-web3"
+    "nestjs-web3",
+    "web3js",
+    "ethereum",
+    "blockchain"
   ]
 }
